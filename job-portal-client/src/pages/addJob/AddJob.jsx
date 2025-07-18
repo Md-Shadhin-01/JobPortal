@@ -19,7 +19,7 @@ const AddJob = () => {
     newJob.responsibilities = newJob.responsibilities.split('\n');
     newJob.status = "active";
 
-    fetch('http://localhost:5000/jobs', {
+    fetch('https://jobportal-1-2ka1.onrender.com/jobs', {
       method: 'POST',
       headers: {
         'content-type': 'application/json'

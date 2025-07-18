@@ -4,7 +4,7 @@ import HotJobsCard from './HotJobsCard';
 const HotJobs = () => {
     const[jobs,setJobs]=useState([]);
     useEffect(()=>{
-        fetch('http://localhost:5000/jobs')
+        fetch('https://jobportal-1-2ka1.onrender.com/jobs')
         .then(res=>res.json())
         .then(data=>
             {setJobs(data)}

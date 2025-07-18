@@ -10,7 +10,7 @@ const ViewApplications = () => {
     const status = e.target.value;
     const data = { status };
 
-    fetch(`http://localhost:5000/job-applications/${id}`, {
+    fetch(`https://jobportal-1-2ka1.onrender.com/job-applications/${id}`, {
       method: 'PATCH',
       headers: {
         'Content-Type': 'application/json',

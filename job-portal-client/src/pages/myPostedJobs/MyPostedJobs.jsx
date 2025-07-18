@@ -7,7 +7,7 @@ const MyPostedJobs = () => {
     const {user}=UseAuth();
     useEffect(()=>{
 
-     fetch(`http://localhost:5000/jobs?email=${user.email}`)
+     fetch(`https://jobportal-1-2ka1.onrender.com/jobs?email=${user.email}`)
      .then(res => res.json())
      .then(data => setJobs(data))
 
